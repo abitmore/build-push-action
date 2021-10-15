@@ -176,6 +176,7 @@ async function getCommonArgs(inputs: Inputs): Promise<Array<string>> {
   if (inputs.push) {
     args.push('--push');
   }
+  args.push('--keepgitdir');
   return args;
 }
 
