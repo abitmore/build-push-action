@@ -24,6 +24,8 @@ async function run(): Promise<void> {
 
     const args: string[] = await context.getArgs(inputs, defContext, buildxVersion);
     core.info(`args=${args}`);
+    core.debug(`what?`);
+    core.info(`next?`);
     await exec
       .getExecOutput('docker', args, {
         ignoreReturnCode: true
